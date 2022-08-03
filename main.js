@@ -9,11 +9,11 @@ function renderData(data) {
     let body = '';
     data.forEach(element => {
         body += `
-            <div>
-                <h2>Title: ${element.title}</h2>
-                <p>Id: ${element.id}</p>
-                <p>User Id:${element.userId}</p>
-                <p>Status: ${element.completed}</p>
+            <div class="container">
+                <h2 class="title"> <span> Title: </span> ${element.title}</h2>
+                <p class="id"> <span> Id: </span> ${element.id}</p>
+                <p class="user-id"> <span>User Id: </span>${element.userId}</p>
+                <p class="status"> <span>Status: </span> ${element.completed}</p>
             </div>
         `
     });
